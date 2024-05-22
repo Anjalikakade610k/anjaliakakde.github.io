@@ -16,7 +16,16 @@ document.addEventListener('scroll', () => {
 		header.style.backgroundColor = 'transparent';
 	}
 });
-
+document.addEventListener('DOMContentLoaded', () => {
+	const options = {
+	  strings: ['Software Developer', 'Fullstack Developer'],
+	  typeSpeed: 50,
+	  backSpeed: 50,
+	  loop: true
+	};
+  
+	const typed = new Typed('#typed', options);
+  });
 menu_item.forEach((item) => {
 	item.addEventListener('click', () => {
 		hamburger.classList.toggle('active');
